@@ -29,5 +29,9 @@ namespace SampiyonTakim.Models
         public string Phone { get; set; }
         [Required, MaxLength(24)]
         public string Fax { get; set; }
+
+        public List<Order> Orders { get; set; }
+
+        public CustomerCustomerDemo CustomerCustomerDemo { get; set; }
     }
 }

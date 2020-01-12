@@ -14,6 +14,6 @@ namespace SampiyonTakim.Models
         [Required, MaxLength(24)]
         public string Phone { get; set; }
             
-       public List<Order> Orders { get; set; }
+         public List<Order> Orders { get; set; }
     }
 }

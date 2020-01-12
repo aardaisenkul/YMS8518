@@ -31,7 +31,6 @@ namespace SampiyonTakim.Models
         public string Fax { get; set; }
         public string HomePage { get; set; }
 
-        public int ProductId { get; set; }
-        public Product Product { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

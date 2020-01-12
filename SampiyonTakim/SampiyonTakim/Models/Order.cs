@@ -36,13 +36,18 @@ namespace SampiyonTakim.Models
         public Customer Customer { get; set; }
 
         //SHIPPER ID VARMI BİLMİYOZ K0NTROL
-        public List<Shipper> Shippers { get; set; }
+
+        public int ShipperId { get; set; }
+        public Shipper Shipper { get; set; }
 
         [Required, MaxLength(5)]
 
         public int EmployeeId { get; set; }
 
         public Employee Employee { get; set; }
+
+        
+     
 
 
 

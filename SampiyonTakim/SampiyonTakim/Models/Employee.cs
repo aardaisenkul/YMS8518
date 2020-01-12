@@ -34,7 +34,7 @@ namespace SampiyonTakim.Models
         public string HomePhone { get; set; }
         [Required, MaxLength(4)]
         public string Extension { get; set; }
-        public Byte[] Image { get; set; }
+        public byte[] Image { get; set; }
         
         public string Notes { get; set; }
         public int ReportsTo { get; set; }
@@ -47,7 +47,8 @@ namespace SampiyonTakim.Models
         
         public List<Order> Orders { get; set; }
 
-        //EMPLOYEE KENDİNE DÖNÜYO EKLE !
+       
+        // KENDİNE DÖNÜYO
 
     }
 }

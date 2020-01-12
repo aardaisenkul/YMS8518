@@ -8,6 +8,7 @@ namespace SampiyonTakim.Models
 {
     public class CustomerDemographic
     {
+        [Key]
         [Required, MaxLength(10)]
         public string CustomerTypeId { get; set; }
         
