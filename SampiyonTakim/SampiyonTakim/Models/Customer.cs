@@ -8,6 +8,7 @@ namespace SampiyonTakim.Models
 {
     public class Customer
     {
+        [Required,  MaxLength(5)]
         public string Id { get; set; }
         [Required, MaxLength(40)]
         public string CompanyName { get; set; }
@@ -32,6 +33,6 @@ namespace SampiyonTakim.Models
 
         public List<Order> Orders { get; set; }
 
-        public CustomerCustomerDemo CustomerCustomerDemo { get; set; }
+        
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -38,8 +39,8 @@ namespace SampiyonTakim.Models
         public byte[] Image { get; set; }
         
         public string Notes { get; set; }
-
-        public int ReportsTo { get; set; }
+        
+        public int? ReportsTo { get; set; }
         [ForeignKey("ReportsTo")]
         public Employee ReportsToEmployee { get; set; }
 

@@ -29,8 +29,7 @@ namespace SampiyonTakim.Models
         [Required, MaxLength(15)]
         public string ShipCountry { get; set; }
 
-        public int OrderDetailId { get; set; }
-        public OrderDetail OrderDetail { get; set; }
+       public List<OrderDetail> OrderDetails { get; set; }
 
         public string CustomerId { get; set; }
         public Customer Customer { get; set; }
