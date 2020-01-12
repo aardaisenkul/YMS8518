@@ -13,5 +13,7 @@ namespace SampiyonTakim.Models
         public string CompanyName { get; set; }
         [Required, MaxLength(24)]
         public string Phone { get; set; }
+            
+       public List<Order> Orders { get; set; }
     }
 }

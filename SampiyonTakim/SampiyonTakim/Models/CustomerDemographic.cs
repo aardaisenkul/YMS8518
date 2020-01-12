@@ -13,5 +13,7 @@ namespace SampiyonTakim.Models
         
         public string CustomerDesc { get; set; }
 
+        public CustomerCustomerDemo CustomerCustomerDemo { get; set; }
+
     }
 }

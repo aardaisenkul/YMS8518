@@ -14,7 +14,7 @@ namespace SampiyonTakim.Models
         public short Quantity { get; set; }
         public double Discount { get; set; }
 
-        public List<Product> Products { get; set; }
+        public Product Product { get; set; }
 
         public List<Order> Orders { get; set; }
     }

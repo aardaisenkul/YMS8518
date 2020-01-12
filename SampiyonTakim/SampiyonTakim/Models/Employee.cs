@@ -42,5 +42,12 @@ namespace SampiyonTakim.Models
         public string PhotoPath { get; set; }
 
 
+
+       public List<EmployeeTerritory> EmployeeTerritories { get; set; }
+        
+        public List<Order> Orders { get; set; }
+
+        //EMPLOYEE KENDİNE DÖNÜYO EKLE !
+
     }
 }

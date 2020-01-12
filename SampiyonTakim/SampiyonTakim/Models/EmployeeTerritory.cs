@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace SampiyonTakim.Models
 {
-    public class Region
+    public class EmployeeTerritory
     {
-        public int Id { get; set; }
-        [Required, MaxLength(50)]
-        public string RegionDescription { get; set; }
+        [Key]
+        [Required, MaxLength(20)]
         public string TerritoryId { get; set; }
+
+        public int EmployeeId { get; set; }
+        public Employee Employee { get; set; }
+        
         public Territory Territory { get; set; }
+
     }
+
 }

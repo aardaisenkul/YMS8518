@@ -12,9 +12,9 @@ namespace SampiyonTakim.Models
         [Required, MaxLength(40)]
         public string ProductName { get; set; }
 
-        public int SupplierId { get; set; }
+     
 
-        public int CategoryId { get; set; }
+     
         [Required, MaxLength(20)]
         public string QuantityPerUnit { get; set; }
         public decimal UnitPrice { get; set; }
@@ -23,10 +23,11 @@ namespace SampiyonTakim.Models
         public short ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
 
-        public int OrderDetailId { get; set; }
-        public OrderDetail OrderDetail { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
 
-        public List<Supplier> Supplier { get; set; }
-        public List<Category> Categories { get; set; }
+        public int SupplierId { get; set; }
+        public Supplier Supplier { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

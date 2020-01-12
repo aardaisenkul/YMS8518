@@ -9,9 +9,7 @@ namespace SampiyonTakim.Models
     public class Order
     {
         public int Id { get; set; }
-        [Required, MaxLength(5)]
-        public string CustomerId { get; set; }
-        public int EmployeeId { get; set; }
+        
         public DateTime OrderDate { get; set; }
         public DateTime RequiredDate { get; set; }
         public DateTime ShippedDate { get; set; }
@@ -33,5 +31,20 @@ namespace SampiyonTakim.Models
 
         public int OrderDetailId { get; set; }
         public OrderDetail OrderDetail { get; set; }
+
+        public string CustomerId { get; set; }
+        public Customer Customer { get; set; }
+
+        //SHIPPER ID VARMI BİLMİYOZ K0NTROL
+        public List<Shipper> Shippers { get; set; }
+
+        [Required, MaxLength(5)]
+
+        public int EmployeeId { get; set; }
+
+        public Employee Employee { get; set; }
+
+
+
     }
 }
