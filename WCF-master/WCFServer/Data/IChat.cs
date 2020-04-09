@@ -53,11 +53,13 @@ namespace Data
                 string createText = nickname + ": " + message +"--> "+ DateTime.Now + Environment.NewLine;
                 File.WriteAllText(path, createText);
             }
-
-            // This text is always added, making the file longer over time
-            // if it is not deleted.
-            string appendText = nickname + ": " + message + "--> " + DateTime.Now + Environment.NewLine;
-            File.AppendAllText(path, appendText);
+            else
+            {// This text is always added, making the file longer over time
+             // if it is not deleted.
+                string appendText = nickname + ": " + message + "--> " + DateTime.Now + Environment.NewLine;
+                File.AppendAllText(path, appendText);
+            }
+            
 
             //File.writealltext
             //file.appendtext
